@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+/* To-Do Section */
+.todos {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.todos input,
+.todos textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #1565c0;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.todos input:focus,
+.todos textarea:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 5px rgba(13, 71, 161, 0.5);
+}
+
+.todos textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+#btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1e88e5;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Task Box */
+.box {
+    width: 100%;
+    padding: 20px;
+    background: #64b5f6;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+p span {
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+/* Button Group */
+.bTn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bTn button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #90caf9;
+    color: #0d47a1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.bTn button:hover {
+    background: #42a5f5;
+    color: #ffffff;
+}
